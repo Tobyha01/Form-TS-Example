@@ -1,0 +1,25 @@
+body{background-color:#064663; color:rgba(255, 255, 255, 0.752);}
+#formContent{width:70%; border: 2px solid black; background:#041c328b;}
+label{display:flex; width:400px; height:20px; margin-top:12px; color:rgba(255, 255, 255, 0.752);}
+label#age{width:456px; height:20px;}
+label.radio{width:667px; }
+
+input{display:flex; width:170px; margin-left:40px;}
+input[type="text"]{margin-left:28px;}
+input[type="radio"]{width:15px; margin-left:30px;}
+input[type="date"]{text-align:center; width:120px; margin-left:60px;}
+input[type="range"]{margin-left:10px;}
+input#weight{margin-left:5px; width:154px;}
+input#yes{margin-left:22px;}
+input#no{margin-left:30px;}
+input#female{margin-left:49px;}
+
+.tile{background-color:rgb(80, 80, 149); text-align:center; margin:3% 2px 0 3px;
+      border:solid black 1.5px; width:10%; border-radius:8%;
+      /* display: flex flex-wrap:wrap; - more modern can do more things*/
+}
+
+#tilecontainer{display:flex; flex-wrap:wrap; padding:0 0 0 3.8%;}
+
+button{padding:0.5em; display:block; margin:1% 0 1% 0.5%; border: solid rgb(0, 0, 0) 2.5px;}
+#delete{margin-left:30%; margin-bottom:10%; height:8.8%; font-size:0.8em; text-align:center; padding:1.5% 1.5% 2%;}

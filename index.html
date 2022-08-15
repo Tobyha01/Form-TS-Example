@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script type="text/javascript" src="scripts/pet.js" defer ></script>
+    <title>Form TS Example</title>
+</head>
+<body>
+ <h1>Rescue Animal Registration Form</h1>
+ <p>Fill out the form accordingly for new rescue animal arrivals</p>
+    <div id="formContent">
+        <form>
+        <div>
+                <label>Animals Name: 
+                    <input name="name" id="name" type="text" value="Name">
+                </label>
+            </div>
+            
+            <div>
+                <label>Animals Breed: 
+                    <input name="breed" id="breed" type="text" value="Breed">
+                </label>
+            </div>            
+            
+            <div>
+                <label>Animals Age: 
+                    <input name="age" id="age" type="number" value="0" min="0" max="30">
+                </label>
+            </div> 
+                
+            <div>
+                <label class="weight">Animals Weight (kg): 
+                    <input min="0" value="0" name="weight" id="weight" type="number">
+                </label>
+            </div> 
+                
+            <div>
+                <label class="radio">Animals Gender:
+                    <input checked name="gender" id="male" type="radio"> Male
+                    <input name="gender" id="female" type="radio">Female  
+                </label>
+            </div>    
+                
+            <div>
+                <label>Available From: 
+                    <input name="availableFrom" id="availableFrom" type="date">
+                </label>
+            </div>
+                
+            <div>
+                <label class="radio">Has the Animal been neutered:
+                    <input checked name="neutered" id="neutered" type="radio">Yes
+                    <input name="neutered" id="no" type="radio">No
+                </label>
+            </div>    
+                
+            <div>
+                <label class="radio">Has the animal been chipped:
+                    <input checked name="chipped" id="chipped" type="radio">Yes
+                    <input name="chipped" id="chipped" type="radio">No
+                </label>
+            </div>    
+                
+            <div>
+                <label>How friendly is the animal: 
+                    <input value="1" type="range" min="1" max="5" name="temperament" id="temperament">
+                    <span id="temperamentValue">1</span>
+                </label>
+            </div>
+        </form>
+
+        <button onclick="savePet()">Save</button>
+            
+    </div>    
+    <div id="tilecontainer"></div>
+    
+</body>
+</html>
